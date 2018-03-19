@@ -17,7 +17,7 @@
 #import "ACFileData.h"
 #import "ACBtMetaInfoData.h"
 
-NSString * const EmbeddedAria2Version = @"1.28.0";
+NSString * const EmbeddedAria2Version = @"1.33.0";
 
 typedef std::vector<std::string> Uris;
 typedef uint64_t Gid;
@@ -44,7 +44,7 @@ typedef aria2::FileData FileData;
 - (instancetype)initWithOptions: (ACKeyVals *)options {
     self = [super init];
     if (self) {
-        aria2Queue = dispatch_queue_create("com.windisco.Maria.gcd.aria2core", DISPATCH_QUEUE_SERIAL);
+        aria2Queue = dispatch_queue_create("org.warexify.Maria.gcd.aria2core", DISPATCH_QUEUE_SERIAL);
         aria2::libraryInit();
         aria2::KeyVals _options = ACToKeyVals(options);
         aria2::SessionConfig config;

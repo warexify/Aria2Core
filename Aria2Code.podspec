@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "Eugene Istratov"
 
-  s.platform     = :osx, "10.10"
+  s.platform     = :osx, "10.11"
   s.source       = { :git => "https://github.com/warexify/Aria2Core.git", :tag => "#{s.version}" }
 
   s.source_files  = "Aria2Core/*.{h,mm}"
