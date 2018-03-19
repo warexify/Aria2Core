@@ -82,8 +82,8 @@
 			children = (
 				88DAEE871D912AE700FF6E35 /* aria2.h */,
 				88DAEE7E1D912A8900FF6E35 /* Aria2Core */,
-				88DAEE7D1D912A8900FF6E35 /* Products */,
 				88DAEE8B1D912AFA00FF6E35 /* Frameworks */,
+				88DAEE7D1D912A8900FF6E35 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = ShinCurry;
+				ORGANIZATIONNAME = "Eugene Istratov";
 				TargetAttributes = {
 					88DAEE7B1D912A8900FF6E35 = {
 						CreatedOnToolsVersion = 8.0;
@@ -172,7 +172,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 			);
 			mainGroup = 88DAEE721D912A8900FF6E35;
 			productRefGroup = 88DAEE7D1D912A8900FF6E35 /* Products */;
@@ -253,7 +252,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -299,7 +297,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -326,7 +323,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Aria2Core/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.windisco.Aria2Core;
+				PRODUCT_BUNDLE_IDENTIFIER = org.warexify.Aria2Core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -351,7 +348,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Aria2Core/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.windisco.Aria2Core;
+				PRODUCT_BUNDLE_IDENTIFIER = org.warexify.Aria2Core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

@@ -2,8 +2,8 @@
 //  Aria2Core.h
 //  Aria2Core
 //
-//  Created by ShinCurry on 2016/9/20.
-//  Copyright © 2016年 ShinCurry. All rights reserved.
+//  Created by Eugene Istratov on 18.03.2018.
+//  Copyright © 2018 Eugene Istratov. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

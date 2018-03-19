@@ -2,8 +2,8 @@
 //  Aria2Core.m
 //  Aria2Core
 //
-//  Created by ShinCurry on 2016/9/20.
-//  Copyright © 2016年 ShinCurry. All rights reserved.
+//  Created by Eugene Istratov on 18.03.2018.
+//  Copyright © 2018 Eugene Istratov. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -384,7 +384,7 @@ KeyVals ACToKeyVals(ACKeyVals * options) {
 
 ACKeyVals * KeyValsToAC(KeyVals options) {
     NSMutableDictionary<NSString *, NSString *> * _options = [[NSMutableDictionary<NSString *, NSString *> alloc] init];
-    
+
     for (auto it = options.begin(); it != options.end(); ++it) {
         NSString * key = [NSString stringWithCString:(it->first).c_str() encoding:NSUTF8StringEncoding];
         NSString * value = [NSString stringWithCString:(it->first).c_str() encoding:NSUTF8StringEncoding];
@@ -396,7 +396,7 @@ ACKeyVals * KeyValsToAC(KeyVals options) {
 
 Uris ACToUris(ACUris * uris) {
     Uris _uris;
-    
+
     for (ACUri * uri in uris) {
         _uris.push_back(uri.UTF8String);
     }
@@ -421,7 +421,7 @@ ACGids * GidsToAC(Gids gids) {
 }
 
 Gid ACToGid(ACGid * gid) {
-    
+
     return aria2::hexToGid([gid cStringUsingEncoding:NSUTF8StringEncoding]);
 }
 
